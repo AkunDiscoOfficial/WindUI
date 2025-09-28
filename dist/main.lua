@@ -20,13 +20,11 @@ local a a={cache={}, load=function(b)if not a.cache[b]then a.cache[b]={c=a[b]()}
 
 
 
-
-
-local b=game:GetService"RunService"local d=
-b.Heartbeat
-local e=game:GetService"UserInputService"
-local f=game:GetService"TweenService"
-local g=game:GetService"LocalizationService"
+local b=cloneref(game:GetService"RunService")
+local d= b.Heartbeat
+local e=cloneref(game:GetService"UserInputService")
+local f=cloneref(game:GetService"TweenService")
+local g=cloneref(game:GetService"LocalizationService")
 
 local h=loadstring(game:HttpGetAsync"https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua")()
 h.SetIconsType"lucide"
